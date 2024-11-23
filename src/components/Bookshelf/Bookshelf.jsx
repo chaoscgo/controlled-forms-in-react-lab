@@ -52,11 +52,18 @@ return (
            onChange={handleInputChange}
          />
        </div>
-       <button type="submit">Submit</button>
+       <button type="submit">Add Book</button>
      </form>
    </div>
-   <div className="bookCardsDiv">{/* Book cards will display here */}</div>
- </div>
+   <div className="bookCardsDiv">
+      {books.map((book, index) => (
+          <div className="card" key={index}>
+              <h1>{book.title}</h1>
+              <h2> by {book.author}</h2>
+          </div>
+        ))}
+      </div>
+   </div>
 );
 
 };
