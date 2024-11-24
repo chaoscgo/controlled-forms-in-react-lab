@@ -34,7 +34,7 @@ return (
    <div className="formDiv">
      <h3>Add a Book</h3>
      <form onSubmit={handleSubmit}>
-       <div>
+       <div className="title">
          <label htmlFor="title">Title: </label>
          <input 
            id="title"
@@ -43,7 +43,7 @@ return (
            onChange={handleInputChange}
          />
        </div>
-       <div>
+    <div className="author">
          <label htmlFor="author">Author: </label>
          <input
            id="author"
